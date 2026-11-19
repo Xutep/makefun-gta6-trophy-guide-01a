@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — all 55 PS5 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Grand Theft Auto VI · PlayStation 5 · offline guide</p>
+    <h1>Leonida Trophy Guide &amp; Tracker</h1>
+    <p class="lede">Every one of the 55 official PS5 trophies — name, description and grade as PlayStation publishes them — with a guide in our own words, a cited source beside each one, a roadmap to the platinum, and a checklist that saves in your browser.</p>
+  </div>
+  <div class="progress-card" aria-label="Platinum progress">
+    <p class="progress-count"><span id="earnedCount">0</span><span class="of"> / 55</span></p>
+    <p class="progress-label">trophies earned</p>
+    <div class="bar"><div id="progressBar" class="bar-fill" style="width:0%"></div></div>
+    <p class="progress-sub"><span id="gradeCounts">0 platinum · 0 gold · 0 silver · 0 bronze</span></p>
+    <p class="progress-sub">Platinum: <strong id="platState">Vice Got a Price! — locked</strong></p>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Tracker controls">
+  <div class="filters" id="filters" role="group" aria-label="Filter trophies by kind">
+    <button type="button" data-kind="all" class="filter active">All <span id="countAll">55</span></button>
+    <button type="button" data-kind="story" class="filter">Story</button>
+    <button type="button" data-kind="missable" class="filter">⚠ Missable</button>
+    <button type="button" data-kind="collectibles" class="filter">Collectibles</button>
+    <button type="button" data-kind="activities" class="filter">Activities</button>
+    <button type="button" data-kind="online" class="filter">Online</button>
+    <button type="button" data-kind="earned" class="filter">Earned ✓</button>
+    <button type="button" data-kind="todo" class="filter">To do</button>
+  </div>
+  <div class="search-row">
+    <input id="search" type="search" placeholder="Search trophies, missions, guides…" aria-label="Search trophies">
+    <label class="spoiler-toggle"><input id="spoiler" type="checkbox"> 🙈 Spoiler-free mode <span class="hint">hides story trophy names &amp; descriptions until earned</span></label>
+  </div>
+  <div class="io-row">
+    <button id="exportBtn" type="button">⬇ Export progress (.json)</button>
+    <label class="import-btn">⬆ Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button" class="ghost">Reset checklist</button>
+    <span id="ioMsg" class="io-msg" role="status"></span>
+  </div>
+</nav>
+
+<main>
+  <section class="list-section" aria-labelledby="listTitle">
+    <h2 id="listTitle">All 55 trophies <span id="shownCount" class="muted"></span></h2>
+    <p class="muted small">Names, descriptions and grades are the official PlayStation list (Exophase &amp; PSNProfiles agree). Guides are written in our own words for this entry, with the source named beside each one; steps inferred from the official description say so, and launch-unconfirmed steps are marked UNCONFIRMED.</p>
+    <div id="trophyList" class="trophy-list"></div>
+    <p id="emptyMsg" class="empty" hidden>No trophies match this filter — try another filter or clear the search.</p>
+  </section>
+
+  <section id="roadmap" class="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">🗺 Roadmap to the Platinum — <span class="muted">about 200 hours, 1 playthrough, 0 online trophies</span></h2>
+    <p class="muted">Built from the official trophy descriptions and the PowerPyx roadmap (difficulty 4/10, ~200 hours, no mission replay, no difficulty settings, cheats disable trophies and saving). There are no online trophies — everything is single-player and offline.</p>
+    <ol class="stages">
+      <li><strong>Stage 1 — Play the story, Chapters 1–2 (first ~15 hours).</strong> Finish the opening mission <em>Gone Fishing</em>, then Chapter 1 and Chapter 2. <span class="warn">Do the Chapter 1 balcony meditation before leaving Chapter 1</span> — it is the game's only missable trophy step (see Missables). Keep a manual save at the start of every chapter: there is no mission replay.</li>
+      <li><strong>Stage 2 — Chapters 3–4 + side strands.</strong> Finish the remaining chapter and mission trophies (<em>Breakfast Run</em>, <em>The Cartel Heist</em>, <em>Child's Play</em>, <em>Headliners</em>, <em>VCIA Takedown</em>, <em>Operation Savage Glory</em>), the side-character finals (Andy, Kenton, Billy, Randy, Tyrone) and 8 stranger strands. Do time-sensitive stranger missions the moment they appear. Robberies open up here: bank vaults, armored trucks, shops, jewelry stores.</li>
+      <li><strong>Stage 3 — The final mission, then free-roam.</strong> Complete the final mission for the gold, then keep playing in free-roam. Nothing toward 100% is missable after the story.</li>
+      <li><strong>Stage 4 — Collectibles &amp; activities cleanup.</strong> Meditation spots, 3 collectible card sets, 100 WAiNK It locations, 100 vehicles discovered, all of Leonida explored, all garages bought; then the activity grind: 250 stunts, 42 shooting-range golds, drone races at every location, 20 different race wins, 50+ challenges, fishing vs Cal, arcade, bowling, hunting for Bret.</li>
+      <li><strong>Stage 5 — 100% Completion &amp; the platinum.</strong> Open Progress → Stats → 100% Completion and finish the checklist — PowerPyx reports it is roughly 60% of true completion and needs only 70 of 80 challenges, but shooting ranges, drone races, robberies, underwater discoveries and Bret's quests need everything. <em>A Long Road</em> (gold) is the hardest trophy; the platinum <em>Vice Got a Price!</em> pops right after it.</li>
+    </ol>
+  </section>
+
+  <section id="missables" class="missables" aria-labelledby="missTitle">
+    <h2 id="missTitle">⚠ Missable trophies</h2>
+    <p><strong>1 trophy is flagged missable</strong> in this guide — <strong>Positive Mental Attitude</strong> (meditate at every spot across Leonida). PowerPyx flags it as the only potentially missable trophy: the first meditation, Lucia on the balcony of Jason's house in Chapter 1 (after the mission <em>Down to Earth</em>, talk to Lucia in the kitchen in the morning and accept), disappears after Chapter 1, and the game has no mission replay. Do it before finishing Chapter 1 and keep a Chapter 1 save until the trophy pops.</p>
+    <p class="muted">Watch-list (not missable trophies, but timed content): stranger strands can include time-sensitive optional missions — Output Lag reports a Chapter 3 street race with an hourglass icon. Optional missions disappearing does not block any trophy, per PowerPyx, because there are far more than the 8 strands <em>Strangers &amp; Freaks</em> needs. No online trophies exist, so nothing is locked behind multiplayer.</p>
+    <p id="missableList" class="missable-list"></p>
+  </section>
+
+  <section class="sources-note" aria-labelledby="srcTitle">
+    <h2 id="srcTitle">Sources &amp; how this guide was built</h2>
+    <p>Official names, descriptions and grades: <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — Grand Theft Auto VI Trophies</a> and <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles — Grand Theft Auto VI trophies</a> (the two agree on all 55). Roadmap, missable warning, 100% checklist and time estimates: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a>. Extra launch-week checks: <a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag — GTA 6 Trophy List</a>. The game released 19 November 2026; where no guide had verified a step at launch, this guide says UNCONFIRMED rather than inventing one. No Rockstar artwork, logos or game screenshots are used — the look is our own. Progress is stored only in your browser (localStorage); export/import moves it as a file.</p>
+  </section>
+</main>
+
+<footer><p>Leonida Trophy Guide &amp; Tracker — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games / Take-Two Interactive; this guide is not affiliated with or endorsed by them. Built for make.fun's “Build the best GTA 6 trophy guide” bounty.</p></footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
